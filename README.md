@@ -35,3 +35,7 @@ Submit pull requests to improve the source code.
 Report bugs or suggest new features by opening issues on the repository.
 
 This program is distributed under the MIT License. See the LICENSE file for more information.
+
+Author: Tran Thanh Son - Sone901
+Co-owner: Nguyen Gia Bao - bikun1
+          Le Duy Thang - DuyThang221
