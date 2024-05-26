@@ -1,7 +1,9 @@
 Contact Management System
+
 This project is a Contact Management System written in C++. It allows users to manage their contacts efficiently. This application provides a range of functionalities including adding, displaying, deleting, searching, editing, sorting, and backing up contacts.
 
 Features
+
 The Contact Management System supports the following functionalities:
 
 Add Contact: Add a new contact to the list.
@@ -25,6 +27,7 @@ Getting Started
 To get a local copy up and running, follow these simple steps.
 
 Prerequisites
+
 A C++ compiler (e.g., GCC, Clang, MSVC)
 C++ Standard Library
 Installation
@@ -37,6 +40,7 @@ Usage
 Upon running the application, you will be presented with a menu to choose from the available functionalities. Select the desired option and follow the prompts to manage your contacts.
 
 Contributing
+
 If you would like to contribute to this project, please follow these steps:
 
 Fork the repository.
@@ -46,9 +50,10 @@ Push to the branch (git push origin feature/YourFeature).
 Open a pull request.
 
 Author: Tran Thanh Son - Sone901
-Co-owner: Nguyen Gia Bao - bikun1
-          Le Duy Thang - DuyThang221
 
+Co-owner: Nguyen Gia Bao - bikun1
+
+Le Duy Thang - DuyThang221
 
 Acknowledgements
 This project was initially based on the work available at https://github.com/JeremyWu917/ContactManagementSystem.git We thank the original author for their contributions.
