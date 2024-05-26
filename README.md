@@ -1,41 +1,54 @@
-# CMS-OOP-Group-4
-Contacts Management System
-Contacts Management System is a simple yet powerful application that allows users to manage their contacts, including contact information such as name, gender, age, phone number, and address.
-=======================
+Contact Management System
+This project is a Contact Management System written in C++. It allows users to manage their contacts efficiently. This application provides a range of functionalities including adding, displaying, deleting, searching, editing, sorting, and backing up contacts.
+
 Features
-Add Contact: Users can add new contact information with name, gender, age, phone number, and address.
-Display Contacts: Display all stored contact information in the address book.
-Delete Contact: Allows users to delete contact information from the address book.
-Search Contact: Search for contact information by name.
-Modify Contact: Modify existing contact information in the address book.
-Clear All Contacts: Clear all contact information from the address book.
-Sort Contacts: Sort contact information by name, age, or gender.
-Backup and Restore: Backup and restore address book data to and from files.
-System Requirements
-Operating System: Windows, MacOS, or Linux.
-C++ Compiler (e.g., g++)
-Libraries and Tools: CMake (for easy building and configuration), Make (for Linux), or IDE (such as Visual Studio Code, Visual Studio, or CLion).
+The Contact Management System supports the following functionalities:
+
+Add Contact: Add a new contact to the list.
+Display Contacts: Display all the contacts in the list.
+Delete Contact: Delete a specific contact from the list.
+Search Contact: Search for a contact by name.
+Edit Contact: Edit the details of an existing contact.
+Delete All Contacts: Remove all contacts from the list.
+Sort Contacts: Sort contacts by name or age.
+Backup and Restore Contacts: Backup the contact list to a file and restore contacts from a backup file.
+New Features Added
+In addition to the original functionalities provided by the source project, our team has added the following features:
+
+Sort Contacts:
+Sort contacts by name.
+Sort contacts by age.
+Backup and Restore Contacts:
+Backup the contact list to an external file.
+Restore the contact list from a backup file.
+Getting Started
+To get a local copy up and running, follow these simple steps.
+
+Prerequisites
+A C++ compiler (e.g., GCC, Clang, MSVC)
+C++ Standard Library
+Installation
+Clone the repository:
+git clone https://github.com/yourusername/ContactManagementSystem.git
+Navigate to the project directory: cd ContactManagementSystem
+Compile the project: g++ -o ContactManagementSystem main.cpp
+Run the executable: ./ContactManagementSystem
 Usage
-Installation:
+Upon running the application, you will be presented with a menu to choose from the available functionalities. Select the desired option and follow the prompts to manage your contacts.
 
-Copy the source code from the repository.
-Run the configuration and build command using CMake: cmake . && make (or use the corresponding IDE).
-Run the Program:
+Contributing
+If you would like to contribute to this project, please follow these steps:
 
-Execute the executable file or corresponding command line on your operating system.
-Upon running, you will see the main menu of the program displayed on the screen.
-Select the Corresponding Option:
-
-Use the keyboard to select the respective menu options to perform desired functions.
-Follow on-screen instructions to input data or perform necessary actions.
-Contribution
-If you wish to contribute to the project, you can:
-
-Submit pull requests to improve the source code.
-Report bugs or suggest new features by opening issues on the repository.
-
-This program is distributed under the MIT License. See the LICENSE file for more information.
+Fork the repository.
+Create a new branch (git checkout -b feature/YourFeature).
+Commit your changes (git commit -m 'Add some feature').
+Push to the branch (git push origin feature/YourFeature).
+Open a pull request.
 
 Author: Tran Thanh Son - Sone901
 Co-owner: Nguyen Gia Bao - bikun1
           Le Duy Thang - DuyThang221
+
+
+Acknowledgements
+This project was initially based on the work available at https://github.com/JeremyWu917/ContactManagementSystem.git We thank the original author for their contributions.
