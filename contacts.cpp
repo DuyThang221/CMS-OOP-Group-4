@@ -2,7 +2,8 @@
 #include <iostream>
 #include <algorithm>
 #include <fstream>
-#include <cstdlib> // For system()
+#include <limits> 
+#include <cstdlib>
 
 using namespace std;
 
@@ -40,23 +41,50 @@ void AddressBooks::addContact() {
         cout << "Enter gender (1 for Male, 2 for Female): ";
         while (true) {
             cin >> gender;
-            if (gender == 1 || gender == 2) {
+            if (cin.fail() || (gender != 1 && gender != 2)) {
+                cin.clear(); // Clear the error flag
+                cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Discard invalid input
+                cout << "Invalid input. Please enter 1 for Male or 2 for Female." << endl;
+            } else {
                 contactsArray[aCount].setGender(gender);
+                cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Clear the newline character from input buffer
                 break;
             }
-            cout << "Invalid input. Please enter again." << endl;
         }
 
         int age;
         cout << "Enter age: ";
-        cin >> age;
-        contactsArray[aCount].setAge(age);
+        while (true) {
+            cin >> age;
+            if (cin.fail() || age <= 0) {
+                cin.clear(); // Clear the error flag
+                cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Discard invalid input
+                cout << "Invalid input. Please enter a valid age (positive number)." << endl;
+            } else {
+                contactsArray[aCount].setAge(age);
+                cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Clear the newline character from input buffer
+                break;
+            }
+        }
 
         cin.ignore(); // To ignore the newline character left by the previous input
         string phone;
         cout << "Enter phone number: ";
-        getline(cin, phone);
-        contactsArray[aCount].setPhone(phone);
+        while (true) {
+            getline(cin, phone);
+            bool valid = true;
+            for (char c : phone) {
+                if (!isdigit(c)) {
+                    valid = false;
+                    break;
+                }
+            }
+            if (valid) {
+                contactsArray[aCount].setPhone(phone);
+                break;
+            }
+            cout << "Invalid input. Please enter a valid phone number (digits only)." << endl;
+        }
 
         string add;
         cout << "Enter address: ";
